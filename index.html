@@ -118,7 +118,7 @@
   }
 
   function generateQR() {
-    const gameUrl = 'https://claude.ai/artifact/NPvUvN9z9afChKnww3suBQ';
+    const gameUrl = window.location.href.split('?')[0] + '?play=1';
     new QRCode(document.getElementById('qrcode'), { text: gameUrl, width: 250, height: 250 });
   }
 
